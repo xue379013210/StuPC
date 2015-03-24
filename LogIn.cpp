@@ -17,4 +17,5 @@ Dialog::~Dialog()
 void Dialog::DialogInit()
 {
     setWindowTitle(QObject::tr("Log In"));
+123
 }
