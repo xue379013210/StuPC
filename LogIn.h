@@ -17,6 +17,9 @@ public:
     //功能函数
     void DialogInit(); //界面初始化
 
+private slots:
+    void on_LogInBtn_clicked();
+
 private:
     Ui::Dialog *ui;
 };
