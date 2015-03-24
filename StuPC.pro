@@ -13,8 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        LogIn.cpp
+           LogIn.cpp \
+           charge.cpp
 
-HEADERS  += LogIn.h
+HEADERS  += LogIn.h \
+            charge.h
 
-FORMS    += LogIn.ui
+FORMS    += LogIn.ui \
+            charge.ui

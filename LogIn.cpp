@@ -17,5 +17,9 @@ Dialog::~Dialog()
 void Dialog::DialogInit()
 {
     setWindowTitle(QObject::tr("Log In"));
-123
+}
+
+void Dialog::on_LogInBtn_clicked()
+{
+    close();
 }
