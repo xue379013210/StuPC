@@ -10,10 +10,22 @@
     <height>300</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="AdminLabel">
+  <widget class="QLabel" name="TitleLabel">
    <property name="geometry">
     <rect>
      <x>160</x>
@@ -53,7 +65,7 @@
    <property name="title">
     <string>学生1</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -313,6 +325,12 @@
      <width>100</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>11</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>登录</string>

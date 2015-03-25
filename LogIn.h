@@ -16,7 +16,7 @@ public:
     explicit Dialog(QWidget *parent = 0);
     ~Dialog();
     //功能函数
-    void DialogInit(); //界面初始化
+    void DialogInit(); //登录界面初始化
 
 private slots:
     void on_LogInBtn_clicked();

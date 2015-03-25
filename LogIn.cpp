@@ -15,11 +15,13 @@ Dialog::~Dialog()
     delete ui;
 }
 
+//登录界面初始化
 void Dialog::DialogInit()
 {
     setWindowTitle(QObject::tr("Log In"));
 }
 
+//登录按键
 void Dialog::on_LogInBtn_clicked()
 {
     close();
