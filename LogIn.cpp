@@ -1,5 +1,6 @@
 #include "LogIn.h"
 #include "ui_LogIn.h"
+#include "charge.h"
 
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent),
@@ -22,4 +23,6 @@ void Dialog::DialogInit()
 void Dialog::on_LogInBtn_clicked()
 {
     close();
+    Charge *Ui_Charge = new Charge;
+    Ui_Charge->show();
 }

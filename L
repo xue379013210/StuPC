@@ -1,0 +1,6 @@
+*   [31m6a46021[m -[33m (HEAD, master)[m First merge:the Login interface has been completed. [32m(11 seconds ago) [1;34m<wxy>[m
+[31m|[m[32m\[m  
+[31m|[m * [31ma665406[m -[33m (dev)[m Login interface has been completed. [32m(2 minutes ago) [1;34m<wxy>[m
+[31m|[m * [31m69f81bf[m -[33m[m One test. [32m(3 hours ago) [1;34m<wxy>[m
+[31m|[m[31m/[m  
+* [31m6759719[m -[33m (origin/master)[m Just begin of StuPC. [32m(3 hours ago) [1;34m<wxy>[m
