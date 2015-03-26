@@ -2,7 +2,6 @@
 #define LOGIN_H
 
 #include <QDialog>
-#include "charge.h"
 
 namespace Ui {
 class Dialog;

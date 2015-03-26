@@ -15,16 +15,16 @@ Dialog::~Dialog()
     delete ui;
 }
 
-//登录界面初始化
+//====================界面设置======================
+//LogIn界面初始化
 void Dialog::DialogInit()
 {
     setWindowTitle(QObject::tr("Log In"));
 }
 
-//登录按键
+//====================按键设置======================
+//LogIn按键，进入Charge界面
 void Dialog::on_LogInBtn_clicked()
 {
-    close();
-    Charge *Ui_Charge = new Charge;
-    Ui_Charge->show();
+    accept();
 }

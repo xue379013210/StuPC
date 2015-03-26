@@ -17,6 +17,11 @@ public:
     //功能函数
     void ChargeInit(); //充电电路界面初始化
 
+private slots:
+    void on_ReLogInBtn_clicked();
+
+    void on_NextBtn_clicked();
+
 private:
     Ui::Charge *ui;
 };
