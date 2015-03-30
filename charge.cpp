@@ -52,13 +52,8 @@ void Charge::ShowTime()
 void Charge::on_ReLogInBtn_clicked()
 {
     this->close();
-    //新建一个LogIn界面
-    Dialog Ui_LogIn_1;
-    //显示LogIn界面，当在Login界面点击LogIn按键则进入if，显示Charge界面
-    if(Ui_LogIn_1.exec() == QDialog::Accepted)
-    {
-        show();
-    }
+    Dialog *Ui_LogIn = new Dialog;
+    Ui_LogIn->show();
 }
 
 //NextBtn按键，进入discharge界面

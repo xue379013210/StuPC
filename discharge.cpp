@@ -26,6 +26,7 @@ void DisCharge::DisChargeInit()
     ShowTime();
 }
 
+//时钟显示Label
 void DisCharge::ShowTime()
 {
     QDateTime time = QDateTime::currentDateTime(); //获取系统现在时间

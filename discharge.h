@@ -22,9 +22,8 @@ public:
     void DisChargeInit(); //放电电路界面初始化
 
 private slots:
+    void on_PreBtn_clicked(); //上一页按键
     void ShowTime(); //显示系统时间
-
-    void on_PreBtn_clicked();
 
 private:
     Ui::DisCharge *ui;
