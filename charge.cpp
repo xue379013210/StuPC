@@ -1,8 +1,5 @@
 #include "charge.h"
 #include "ui_charge.h"
-#include "LogIn.h"
-
-extern Dialog w;
 
 Charge::Charge(QWidget *parent) :
     QDialog(parent),
@@ -22,6 +19,11 @@ Charge::~Charge()
 void Charge::ChargeInit()
 {
     setWindowTitle(QObject::tr("充电电路"));
+    //----------------系统时间---------------------
+    timer = new QTimer(this);
+    connect(timer,SIGNAL(timeout()), this,SLOT(ShowTime()));
+    timer->start(1000);
+    ShowTime();
     //----------------电感列表---------------------
     QStringList LList;
     LList.append("200");
@@ -35,11 +37,21 @@ void Charge::ChargeInit()
     CList.append("470");
     ui->CComboBox->addItems(CList);
 }
+//时钟显示Label
+void Charge::ShowTime()
+{
+    QDateTime time = QDateTime::currentDateTime(); //获取系统现在时间
+    QString TimeStr1 = time.toString("   hh:mm:ss"); //时间格式
+    QString TimeStr2 = time.toString("yyyy/MM/dd ddd"); //年月日格式
+    ui->TimeLabel_1->setText(TimeStr1); //在标签上显示时间
+    ui->TimeLabel_2->setText(TimeStr2);
+}
 
 //====================Btn设置======================
+//ReLogIn按键，返回登录界面
 void Charge::on_ReLogInBtn_clicked()
 {
-    close();
+    this->close();
     //新建一个LogIn界面
     Dialog Ui_LogIn_1;
     //显示LogIn界面，当在Login界面点击LogIn按键则进入if，显示Charge界面
@@ -49,7 +61,10 @@ void Charge::on_ReLogInBtn_clicked()
     }
 }
 
+//NextBtn按键，进入discharge界面
 void Charge::on_NextBtn_clicked()
 {
-
+    this->close();
+    DisCharge *Ui_DisCharge = new DisCharge;
+    Ui_DisCharge->show();
 }

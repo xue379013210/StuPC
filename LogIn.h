@@ -18,7 +18,8 @@ public:
     void DialogInit(); //登录界面初始化
 
 private slots:
-    void on_LogInBtn_clicked();
+    void on_LogInBtn_clicked(); //登录按键
+    void on_ExitBtn_clicked(); //退出按键
 
 private:
     Ui::Dialog *ui;

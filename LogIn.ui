@@ -317,24 +317,67 @@
     </layout>
    </widget>
   </widget>
-  <widget class="QPushButton" name="LogInBtn">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>274</x>
-     <y>228</y>
-     <width>100</width>
-     <height>41</height>
+     <x>220</x>
+     <y>230</y>
+     <width>168</width>
+     <height>37</height>
     </rect>
    </property>
-   <property name="font">
-    <font>
-     <family>宋体</family>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>登录</string>
-   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_10">
+    <item>
+     <widget class="QPushButton" name="LogInBtn">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ExitBtn">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
