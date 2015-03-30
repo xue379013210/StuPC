@@ -1,5 +1,6 @@
 #include "LogIn.h"
 #include "charge.h"
+#include "discharge.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
@@ -9,6 +10,8 @@ int main(int argc, char *argv[])
     Dialog Ui_LogIn;
     //新建Charge界面
     Charge Ui_Charge;
+    //新建DisCharge界面
+    DisCharge Ui_DisCharge;
     //显示LogIn界面，当在Login界面点击LogIn按键则进入if，显示Charge界面
     if(Ui_LogIn.exec() == QDialog::Accepted)
     {

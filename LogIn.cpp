@@ -28,3 +28,8 @@ void Dialog::on_LogInBtn_clicked()
 {
     accept();
 }
+
+void Dialog::on_ExitBtn_clicked()
+{
+    close();
+}

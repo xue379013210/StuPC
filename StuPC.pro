@@ -14,10 +14,13 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
            LogIn.cpp \
-           charge.cpp
+           charge.cpp \
+           discharge.cpp
 
 HEADERS  += LogIn.h \
-            charge.h
+            charge.h \
+            discharge.h
 
 FORMS    += LogIn.ui \
-            charge.ui
+            charge.ui \
+            discharge.ui
